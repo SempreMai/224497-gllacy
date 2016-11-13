@@ -6,11 +6,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
       <header>
-        <div class="header-block">
+        <div class="container clearfix">
           <div class="logo">
-            <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип «Глейси»">
+            <a href="#" class="link-main">
+              <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип «Глейси»">
+            </a>
           </div>
           <nav class="navigation">
             <ul>
@@ -71,12 +72,7 @@
                 <a class="btn" href="#">Оформить заказ</a>
               </div>
             </div>
-            <ul class="breadcrumps">
-              <li class="breadcrump-1"><a href="#" title="main">ГЛАВНАЯ</a></li>
-              <li class="breadcrump-2"><a href="#" title="shop">Каталог</a></li>
-              <li class="breadcrump-3"><span>Сливочное</span></li>
-            </ul>
-            <div class="timing-phone">
+            <div class="timing-phone catalogue">
               <p class="timing">С 10 до 20, ежедневно</p>
               <b class="phone-number">8 812 450-25-25</b>
             </div>
@@ -257,42 +253,45 @@
           </div>
         </main>
         <footer>
-          <section class="footer-social">
-            <a class="social-btn social-btn-twit" href="#">
-              <img src="img/twit-icon.png" width="33" height="32" alt="Твиттер">
-            </a>
-            <a class="social-btn social-btn-inst" href="#">
-              <img src="img/insta-icon.png" width="32" height="32" alt="Инстаграм">
-            </a>
-            <a class="social-btn social-btn-fb" href="#">
-              <img src="img/fb-icon.png" width="32" height="32" alt="Фейсбук">
-            </a>
-            <a class="social-btn social-btn-vk" href="#">
-              <img src="img/vk-icon.png" width="32" height="32" alt="Вконтакте">
-            </a>
-          </section>
-          <section class="footer-links">
-            <ul>
-              <li class="footer-link-left"><a href="#">
-                <span>Для поставщиков</span>
-              </a></li>
-              <li class="footer-link-right"><a href="#">
-                <span>Наши документы</span>
-              </a></li>
-              <li class="footer-link-left"><a href="#">
-                <span>О производстве</span>
-              </a></li>
-              <li class="footer-link-right"><a href="#">
-                <span>Экологические стандарты</span>
-              </a></li>
-            </ul>
-          </section>
-          <section class="footer-copyright">
-            <a class="btn" href="https://htmlacademy.ru">
-              <img src="img/html-academy-logo.png" width="108" height="38" alt="Логотип HTML-Academy"></a>
-              <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
-          </section>
-        </footer>
-      </div>
-  </body>
+          <div class="container clearfix">
+            <section class="footer-social">
+              <ul>
+                <li><a class="social-btn social-btn-twit" href="#">
+                  <img src="img/twit-icon.png" width="33" height="32" alt="Твиттер">
+                </a></li>
+                <li><a class="social-btn social-btn-inst" href="#">
+                  <img src="img/insta-icon.png" width="32" height="32" alt="Инстаграм">
+                </a></li>
+                <li><a class="social-btn social-btn-fb" href="#">
+                  <img src="img/fb-icon.png" width="32" height="32" alt="Фейсбук">
+                </a></li>
+                <li><a class="social-btn social-btn-vk" href="#">
+                  <img src="img/vk-icon.png" width="32" height="32" alt="Вконтакте">
+                </a></li>
+              </ul>
+            </section>
+            <section class="footer-links">
+              <ul>
+                <li class="footer-link-left"><a href="#">
+                  <span>Для поставщиков</span>
+                </a></li>
+                <li class="footer-link-right"><a href="#">
+                  <span>Наши документы</span>
+                </a></li>
+                <li class="footer-link-left"><a href="#">
+                  <span>О производстве</span>
+                </a></li>
+                <li class="footer-link-right"><a href="#">
+                  <span>Экологические стандарты</span>
+                </a></li>
+              </ul>
+            </section>
+            <section class="footer-copyright">
+              <a class="btn" href="https://htmlacademy.ru">
+                <img src="img/html-academy-logo.png" width="108" height="38" alt="Логотип HTML-Academy"></a>
+                <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+            </section>
+        </div>
+      </footer>
+    </body>
 </html>
