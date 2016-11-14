@@ -6,78 +6,78 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header>
-        <div class="container clearfix">
-          <div class="logo">
-            <a href="#" class="link-main">
-              <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип «Глейси»">
-            </a>
+    <header>
+      <div class="container clearfix">
+        <div class="logo">
+          <a href="#" class="link-main">
+            <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип «Глейси»">
+          </a>
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#">Каталог</a>
+              <ul class="subpages">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+        </nav>
+        <div class="basket">
+          <a class="basket-link" href="#"><img src="img/busket-icon.png" width="21" height="20" alt="Иконка корзины">Пусто</a>
+          <div class="in-basket">
+            <table >
+              <tr>
+                <td><img src="img/cross.svg" width="11" height="11" alt="Удалить"></td>
+                <td><img src="img/ice-cream-citrus.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5 кг х 200 руб.</td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td><img src="img/cross.svg" width="11" height="11" alt="Удалить"></td>
+                <td><img src="img/ice-cream-strawberry.png" width="33" height="33" alt="Клубничный пломбир"></td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5 кг х 300 руб.</td>
+                <td>450 руб.</td>
+              </tr>
+              <tr>
+                <td colspan="5">Итого: 750 руб.</td>
+              </tr>
+            </table>
+            <a class="btn" href="#">Оформить заказ</a>
           </div>
-          <nav class="navigation">
-            <ul>
-              <li><a href="#">Каталог</a>
-                <ul class="subpages">
-                  <li><a href="#">Новинки</a></li>
-                  <li><a href="#">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О компании</a></li>
-            </ul>
-          </nav>
-          <div class="search">
-            <a class="search-link" href="#">
-              <img src="img/search-icon.svg" width="17" height="17" alt="Иконка поиска">
-            </a>
-            <form class="search-form" action="#" method="post">
-              <input type="text"  name="search" value="Что ищем?" hidden>
-            </form>
-          </div>
-          <div class="user-login">
-            <a class="login" href="#">
-              <img src="img/login-icon.png" width="21" height="19" alt="Иконка входа">Вход</a>
-              <form class="login-form" action="#" method="post">
-                <input type="text"  name="e-mail" value="Электронная почта" hidden>
-                <input type="password" name="user-password" value="Пароль" hidden>
-                <input type="submit" name="enter" value="Войти" hidden>
-                <a><span class="forgot-password">Забыли пароль?</span></a>
-                <a><span class="new-registration">Новая регистрация</span></a>
-              </form>
-            </div>
-            <div class="basket">
-              <a class="basket-link" href="#"><img src="img/busket-icon.png" width="21" height="20" alt="Иконка корзины">Пусто</a>
-              <div class="in-basket">
-                <table >
-                  <tr>
-                    <td><img src="img/cross.svg" width="11" height="11" alt="Удалить"></td>
-                    <td><img src="img/ice-cream-citrus.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг х 200 руб.</td>
-                    <td>300 руб.</td>
-                  </tr>
-                  <tr>
-                    <td><img src="img/cross.svg" width="11" height="11" alt="Удалить"></td>
-                    <td><img src="img/ice-cream-strawberry.png" width="33" height="33" alt="Клубничный пломбир"></td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1,5 кг х 300 руб.</td>
-                    <td>450 руб.</td>
-                  </tr>
-                  <tr>
-                    <td colspan="5">Итого: 750 руб.</td>
-                  </tr>
-                </table>
-                <a class="btn" href="#">Оформить заказ</a>
-              </div>
-            </div>
-            <div class="timing-phone">
-              <p class="timing">С 10 до 20, ежедневно</p>
-              <b class="phone-number">8 812 450-25-25</b>
-            </div>
-          </div>
-        </header>
+        </div>
+        <div class="user-login">
+          <a class="login" href="#">
+            <img src="img/login-icon.png" width="21" height="19" alt="Иконка входа">Вход</a>
+            <form class="login-form" action="#" method="post">
+              <input type="text"  name="e-mail" value="Электронная почта" hidden>
+              <input type="password" name="user-password" value="Пароль" hidden>
+              <input type="submit" name="enter" value="Войти" hidden>
+            <a><span class="forgot-password">Забыли пароль?</span></a>
+            <a><span class="new-registration">Новая регистрация</span></a>
+          </form>
+        </div>
+        <div class="search">
+          <a class="search-link" href="#">
+            <img src="img/search-icon.svg" width="17" height="17" alt="Иконка поиска">
+          </a>
+          <form class="search-form" action="#" method="post">
+            <input type="text"  name="search" value="Что ищем?" hidden>
+          </form>
+        </div>
+      </div>
+      <div class="timing-phone">
+        <p class="timing">С 10 до 20, ежедневно</p>
+        <b class="phone-number">8 812 450-25-25</b>
+      </div>
+    </header>
         <main>
           <div class="breadcrumps-container">
             <ul class="breadcrumps">
