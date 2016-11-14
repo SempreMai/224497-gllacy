@@ -28,13 +28,30 @@
             <li><a href="#">О компании</a></li>
           </ul>
         </nav>
-        <div class="search">
-          <a class="search-link" href="#">
-            <img src="img/search-icon.svg" width="17" height="17" alt="Иконка поиска">
-          </a>
-          <form class="search-form" action="#" method="post">
-            <input type="text"  name="search" value="Что ищем?" hidden>
-          </form>
+        <div class="basket">
+          <a class="basket-link" href="#"><img src="img/busket-icon.png" width="21" height="20" alt="Иконка корзины">Пусто</a>
+          <div class="in-basket">
+            <table >
+              <tr>
+                <td><img src="img/cross.svg" width="11" height="11" alt="Удалить"></td>
+                <td><img src="img/ice-cream-citrus.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5 кг х 200 руб.</td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td><img src="img/cross.svg" width="11" height="11" alt="Удалить"></td>
+                <td><img src="img/ice-cream-strawberry.png" width="33" height="33" alt="Клубничный пломбир"></td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5 кг х 300 руб.</td>
+                <td>450 руб.</td>
+              </tr>
+              <tr>
+                <td colspan="5">Итого: 750 руб.</td>
+              </tr>
+            </table>
+            <a class="btn" href="#">Оформить заказ</a>
+          </div>
         </div>
         <div class="user-login">
           <a class="login" href="#">
@@ -43,44 +60,27 @@
               <input type="text"  name="e-mail" value="Электронная почта" hidden>
               <input type="password" name="user-password" value="Пароль" hidden>
               <input type="submit" name="enter" value="Войти" hidden>
-              <a><span class="forgot-password">Забыли пароль?</span></a>
-              <a><span class="new-registration">Новая регистрация</span></a>
-            </form>
-          </div>
-          <div class="basket">
-            <a class="basket-link" href="#"><img src="img/busket-icon.png" width="21" height="20" alt="Иконка корзины">Пусто</a>
-            <div class="in-basket">
-              <table >
-                <tr>
-                  <td><img src="img/cross.svg" width="11" height="11" alt="Удалить"></td>
-                  <td><img src="img/ice-cream-citrus.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                  <td>Пломбир с апельсиновым джемом</td>
-                  <td>1,5 кг х 200 руб.</td>
-                  <td>300 руб.</td>
-                </tr>
-                <tr>
-                  <td><img src="img/cross.svg" width="11" height="11" alt="Удалить"></td>
-                  <td><img src="img/ice-cream-strawberry.png" width="33" height="33" alt="Клубничный пломбир"></td>
-                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td>1,5 кг х 300 руб.</td>
-                  <td>450 руб.</td>
-                </tr>
-                <tr>
-                  <td colspan="5">Итого: 750 руб.</td>
-                </tr>
-              </table>
-              <a class="btn" href="#">Оформить заказ</a>
-            </div>
-          </div>
+            <a><span class="forgot-password">Забыли пароль?</span></a>
+            <a><span class="new-registration">Новая регистрация</span></a>
+          </form>
         </div>
-      </header>
-      <main>
-        <div class="container clearfix">
+        <div class="search">
+          <a class="search-link" href="#">
+            <img src="img/search-icon.svg" width="17" height="17" alt="Иконка поиска">
+          </a>
+          <form class="search-form" action="#" method="post">
+            <input type="text"  name="search" value="Что ищем?" hidden>
+          </form>
+        </div>
+      </div>
+      <div class="timing-phone">
+        <p class="timing">С 10 до 20, ежедневно</p>
+        <b class="phone-number">8 812 450-25-25</b>
+      </div>
+    </header>
+    <main>
+      <div class="container clearfix">
           <div class="slider">
-            <div class="timing-phone">
-              <p class="timing">С 10 до 20, ежедневно</p>
-              <b class="phone-number">8 812 450-25-25</b>
-            </div>
             <b class="slider-slogan">Крем-брюле и пломбир<br>с малиновым джемом</b>
             <a class="btn big" href="#">Давайте оба!</a>
             <div class="flip-block">
@@ -108,6 +108,7 @@
                 вкуснейшей шоколадной присыпки совершенно бесплатно.</b>
               <a class="btn">Хочу шоколадки!</a>
             </div>
+          </div>
           <div class="gallery clearfix">
             <div class="item">
               <img src="img/hit.png" width="61" height="61" alt="ХИТ">
@@ -145,32 +146,34 @@
           <div class="features clearfix">
             <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного
               производства на развес</h3>
-            <ul class="features-list">
-              <li class="feature block1"><img src="img/avatar-icecream.png" width="49" height="49" alt="Мороженко">
+            <div class="feature block1"><img src="img/avatar-icecream.png" width="49" height="49" alt="Мороженко">
                 <p class="feature-description">Все наше мороженое изготавливается на собственном
                 производстве, с использованием современного оборудования
-                и проверенных временем технологий.</p></li>
-              <li class="feature block2"><img src="img/avatar-cow.png" width="48" height="49" alt="Корова">
+                и проверенных временем технологий.</p>
+            </div>
+            <div class="feature block2"><img src="img/avatar-cow.png" width="48" height="49" alt="Корова">
                 <p class="feature-description">Закупка ингредиентов  производится только у проверенных
                 фермерских хозяйств и компаний, с которыми нас связывает
-                долговременное сотрудничество.</p></li>
-              <li class="feature block1"><img src="img/avatar-leaf.png" width="49" height="49" alt="Листик">
+                долговременное сотрудничество.</p>
+            </div>
+            <div class="feature block1"><img src="img/avatar-leaf.png" width="49" height="49" alt="Листик">
                 <p class="feature-description">Для приготовления мороженого используются настоящие
                 сливки и молоко высочайшего качества. Все дополнительные
                 ингредиенты и добавки произведены из натурального,
-                экологически чистого сырья.</p></li>
-              <li class="feature block2"><img src="img/avatar-thermometer.png" width="48" height="49" alt="Термометр">
+                экологически чистого сырья.</p>
+            </div>
+            <div class="feature block2"><img src="img/avatar-thermometer.png" width="48" height="49" alt="Термометр">
                 <p class="feature-description">Доставка нашего мороженого до заказчиков осуществляется
                 в специальном термопаке, который не дает мороженому
-                растаять в пути и позволяет сохранить превосходный вкус.</p></li>
-            </ul>
+                растаять в пути и позволяет сохранить превосходный вкус.</p>
+            </div>
           </div>
           <div class="interplay clearfix">
-            <div class="banner left">
+            <div class="banner-left">
               <h4>Новое в нашем блоге</h4>
-              <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+              <a class="blog" href="#">10 способов сервировки фруктовых щербетов к столу</a>
             </div>
-            <div class="banner right">
+            <div class="banner-right">
               <form name="sign-up" action="#" method="post">
                 <p class="sign-up">Подпишитесь на нашу сладкую рассылку
                 и будете всегда в курсе всего самого вкусного,
@@ -187,9 +190,9 @@
               офлайн магазина:</p>
               <b class="office-address">ул. Большая Конюшенная<br>
               19/8, Санкт-Петербург</b>
-              <p class="timing-phone">Для заказов по телефону</p>
+              <p class="order-phone">Для заказов по телефону</p>
               <b class="phone-number">8 812 450-25-25</b>
-              <p class="timing-phone">(с 10 до 20 ежедневно)</p>
+              <p class="order-phone">(с 10 до 20 ежедневно)</p>
               <a class="btn" href="#">Форма обратной связи</a>
             </div>
           </div>
@@ -218,11 +221,11 @@
               <li class="footer-link-left"><a href="#">
                 <span>Для поставщиков</span>
               </a></li>
-              <li class="footer-link-right"><a href="#">
-                <span>Наши документы</span>
-              </a></li>
               <li class="footer-link-left"><a href="#">
                 <span>О производстве</span>
+              </a></li>
+              <li class="footer-link-right"><a href="#">
+                <span>Наши документы</span>
               </a></li>
               <li class="footer-link-right"><a href="#">
                 <span>Экологические стандарты</span>
