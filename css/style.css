@@ -22,7 +22,7 @@ body {
 .container {
   width: 1146px;
   margin: 0 auto;
-  padding: 0;
+  padding: 10 0;
 }
 
 header {
@@ -339,14 +339,19 @@ h1 {
 }
 
 footer {
-  padding-top: 35px;
-  padding-bottom: 30px;
+ padding: 0;
+ text-align: center;
 }
 
 .footer-social {
   float: left;
   margin-right: 180px;
   list-style: none;
+}
+
+.footer-social ul {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-social li {
@@ -360,11 +365,12 @@ footer {
 }
 
 .footer-links {
-  float: left;
-  margin-right: 180px;
+  display: inline-block;
 }
 
 .footer-links ul {
+  padding: 0;
+  text-align: left;
   font-size: 0;
   width: 330px;
   list-style: none;
@@ -372,6 +378,8 @@ footer {
 
 .footer-links li {
   display: inline-block;
+  width: 50%;
+  margin: 0;
 }
 
 .footer-link-left {
@@ -384,11 +392,13 @@ footer {
 }
 
 .footer-copyright {
+  text-align: left;
   float: right;
   min-width: 190px;
 }
 
 .footer-copyright p {
+  margin: 0;
   font-size: 13px;
   line-height: 18px;
 }
